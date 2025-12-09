@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="img/png" href="gambar/Logo Study Shelf.png">
+    <title>Detail E-Book - Study Shelf</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1 class="logo">
+                <img src="gambar/Logo SS Study Shelf.png" alt="Study Shelf Logo" class="logo-img"> 
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="index.html#koleksi">Koleksi</a></li>
+                    <li><a href="index.html#fitur">Fitur</a></li>
+                    <li><a href="index.html#tentang">Tentang Kami</a></li>
+                    <li><a href="index.html#kontak">Kontak</a></li>
+                    <li><a href="CheckOut.html" class="cart-link" aria-label="Keranjang Belanja"><i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="detail-ebook" class="detail-ebook">
+        <div class="container">
+            
+            <a href="index.html#koleksi" class="btn-kembali">&larr; Kembali ke Koleksi</a>
+            
+            <div class="detail-content">
+                <div class="ebook-image-container">
+                    <img src="Gambar/E-BOOK MPT.png" alt="E-book Manajemen Pendidik Tinggi">
+                </div>
+
+                <div class="ebook-info-container">
+                    <h2>Manajemen Pendidik Tinggi</h2>
+                    
+                    <p class="penulis">
+                        <strong>Penerbit:</strong> Prenada Media
+                    </p>
+                    
+                    <p class="harga-detail">Rp 105.000</p>
+                    
+                    <h3>Sinopsis</h3>
+                    <p class="sinopsis">
+Dunia terus berkembang pesat, seiring dengan perkembangan teknologi dan informasi. Banyak hal telah berubah atau berkembang dengan cara yang mungkin tak terpikirkan. Kita telah berada di era yang dikenal sebagai era Revolusi Industri 4.0, di mana banyak perubahan terjadi dengan kecepatan tinggi di berbagai bidang kehidupan, termasuk di dunia pendidikan. Karena itu dunia pendidikan tentunya harus berbenah diri dan bersiap menghadapi tantangan baru di era terkini. Buku Manajemen Pendidikan Tinggi Di Era Revolusi Industri 4.0 ini hadir dengan berbagai gagasan atau pemikiran penulis yang telah diterbitkan berkaitan dengan ruang lingkup perguruan tinggi meliputi, bidang akademik dan pengembangan lembaga, bidang administrasi umum perencanaan dan keuangan, bidang kemahasiswaan dan kerja sama, serta isu-isu terkini bidang pendidikan. Berbagai ide dan pemikiran yang dipaparkan penulis sangat mencerahkan dan dapat membantu semua pihak yang terlibat dalam dunia pendidikan untuk memahami berbagai perkembangan, persoalan dan perubahan yang dihadapi dunia pendidikan di Era Revolusi Industri 4.0.                    </p>
+                    
+                    <div id="ebook-data" 
+                         data-id="mpt" 
+                         data-name="Manajemen Pendidik Tinggi" 
+                         data-price="105000">
+                    </div> 
+
+                    <button onclick="addToCartAndRedirect()" class="btn">Beli Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer id="kontak">
+    <div class="container">
+        <h2>Ikuti Kami</h2>
+        <div class="social">
+     <a href="https://www.facebook.com/USERNAME_FACEBOOK_ANDA" target="_blank" class="facebook">
+       <i class="fa-brands fa-facebook"></i>
+     </a>
+
+     <a href="https://www.instagram.com/ss_studyshelf" target="_blank" class="instagram">
+       <i class="fa-brands fa-instagram"></i>
+     </a>
+
+     <a href="https://wa.me/6281315731299" target="_blank" class="whatsapp">
+       <i class="fa-brands fa-whatsapp"></i>
+     </a>
+    </div>
+        <p>&copy; 2025 Study Shelf. All rights reserved.</p>
+    </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

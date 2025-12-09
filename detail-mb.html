@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="img/png" href="gambar/Logo Study Shelf.png">
+    <title>Detail E-Book - Study Shelf</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1 class="logo">
+                <img src="gambar/Logo SS Study Shelf.png" alt="Study Shelf Logo" class="logo-img"> 
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="index.html#koleksi">Koleksi</a></li>
+                    <li><a href="index.html#fitur">Fitur</a></li>
+                    <li><a href="index.html#tentang">Tentang Kami</a></li>
+                    <li><a href="index.html#kontak">Kontak</a></li>
+                    <li><a href="CheckOut.html" class="cart-link" aria-label="Keranjang Belanja"><i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="detail-ebook" class="detail-ebook">
+        <div class="container">
+            
+            <a href="index.html#koleksi" class="btn-kembali">&larr; Kembali ke Koleksi</a>
+            
+            <div class="detail-content">
+                <div class="ebook-image-container">
+                    <img src="Gambar/E-BOOK MB.png" alt="E-book Merdeka Belajar dan Implementasinya">
+                </div>
+
+                <div class="ebook-info-container">
+                    <h2>Merdeka Belajar dan Implementasinya</h2>
+                    
+                    <p class="penulis">
+                        <strong>Penerbit:</strong> Elex Media Komputindo
+                    </p>
+                    
+                    <p class="harga-detail">Rp 110.000</p>
+                    
+                    <h3>Sinopsis</h3>
+                    <p class="sinopsis">
+Merdeka Belajar dan Implementasinya: Merdeka Guru-Siswa, Merdeka Dosen-Mahasiswa adalah buku bacaan karangan seorang dosen bernama Ana Widyastuti, M.Pd, Kons. Merdeka belajar bermakna kemerdekaan belajar, yakni memberikan kesempatan belajar sebebas-bebasnya dan senyaman-nyamannya kepada anak didik untuk belajar dengan tenang, santai, dan gembira tanpa stres dan tekanan. Merdeka belajar juga berarti memperhatikan bakat alami yang mereka punyai, tanpa memaksa anak didik mempelajari atau menguasai suatu bidang pengetahuan di luar hobi dan kemampuan mereka, sehingga masing-masing mereka mempunyai portofolio yang sesuai dengan kegemarannya. Kurikulum Merdeka Belajar adalah kebijakan pengembangan yang dikeluarkan Kemdikbud Ristekdikti untuk pembelajaran peserta didik di sekolah. Kebijakan merdeka belajar menjadi langkah untuk mentransformasi pendidikan demi terwujudnya Sumber Daya Manusia (SDM) Unggul Indonesia yang memiliki Profil Pelajar Pancasila. Kurikulum ini juga dikenal dengan pembelajaran intrakurikuler yang beragam di mana konten akan lebih optimal agar peserta didik memiliki cukup waktu untuk mendalami konsep dan menguatkan kompetensi.
+                    </p>
+                    
+                    <div id="ebook-data" 
+                         data-id="mb" 
+                         data-name="Merdeka Belajar dan Implementasinya" 
+                         data-price="110000">
+                    </div> 
+
+                    <button onclick="addToCartAndRedirect()" class="btn">Beli Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer id="kontak">
+    <div class="container">
+        <h2>Ikuti Kami</h2>
+        <div class="social">
+     <a href="https://www.facebook.com/USERNAME_FACEBOOK_ANDA" target="_blank" class="facebook">
+       <i class="fa-brands fa-facebook"></i>
+     </a>
+
+     <a href="https://www.instagram.com/ss_studyshelf" target="_blank" class="instagram">
+       <i class="fa-brands fa-instagram"></i>
+     </a>
+
+     <a href="https://wa.me/6281315731299" target="_blank" class="whatsapp">
+       <i class="fa-brands fa-whatsapp"></i>
+     </a>
+    </div>
+        <p>&copy; 2025 Study Shelf. All rights reserved.</p>
+    </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

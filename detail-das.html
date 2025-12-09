@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="img/png" href="gambar/Logo Study Shelf.png">
+    <title>Detail E-Book - Study Shelf</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1 class="logo">
+                <img src="gambar/Logo SS Study Shelf.png" alt="Study Shelf Logo" class="logo-img"> 
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="index.html#koleksi">Koleksi</a></li>
+                    <li><a href="index.html#fitur">Fitur</a></li>
+                    <li><a href="index.html#tentang">Tentang Kami</a></li>
+                    <li><a href="index.html#kontak">Kontak</a></li>
+                    <li><a href="CheckOut.html" class="cart-link" aria-label="Keranjang Belanja"><i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="detail-ebook" class="detail-ebook">
+        <div class="container">
+            
+            <a href="index.html#koleksi" class="btn-kembali">&larr; Kembali ke Koleksi</a>
+            
+            <div class="detail-content">
+                <div class="ebook-image-container">
+                    <img src="Gambar/E-BOOK DAS.png" alt="E-book Dialah Allah SWT yang Kita Sembah">
+                </div>
+
+                <div class="ebook-info-container">
+                    <h2>Dialah Allah SWT yang Kita Sembah</h2>
+                    
+                    <p class="penulis">
+                        <strong>Penerbit:</strong> Diva proses
+                    </p>
+                    
+                    <p class="harga-detail">Rp 60.000</p>
+                    
+                    <h3>Sinopsis</h3>
+                    <p class="sinopsis">
+Sayyid Muhammad bin Alawi al-Maliki telah menulis banyak kitab selama hidupnya. Dan, semua kitab yang ditulisnya menjadi kitab pedoman Ahlus Sunnah wal Jama’ah, salah satunya termasuk Dialah Allah Swt yang Kita Sembah ini.
+
+Buku ini merupakan tulisan ringkas tentang persoalan-persoalan penting yang banyak menimbulkan perselisihan di antara para pencari ilmu. Di antaranya ialah persoalan istiwa’ (bersemayamnya Allah), persoalan-persoalan yang berhubungan dengan tauhid uluhiyah, rububiyah, asma’ (nama-nama Allah) dan sifat-sifat-Nya. Selain itu, buku ini juga mengupas persoalan yang berkaitan dengan kedudukan Pencipta dan ciptaan, majaz ‘aqli, tentang takwil, seputar penyimpangan orang yang batil dan reduksi orang yang sesat                    </p>
+                    
+                    <div id="ebook-data" 
+                         data-id="das" 
+                         data-name="Dialah Allah SWT yang Kita Sembah" 
+                         data-price="60000">
+                    </div> 
+
+                    <button onclick="addToCartAndRedirect()" class="btn">Beli Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer id="kontak">
+    <div class="container">
+        <h2>Ikuti Kami</h2>
+        <div class="social">
+     <a href="https://www.facebook.com/USERNAME_FACEBOOK_ANDA" target="_blank" class="facebook">
+       <i class="fa-brands fa-facebook"></i>
+     </a>
+
+     <a href="https://www.instagram.com/ss_studyshelf" target="_blank" class="instagram">
+       <i class="fa-brands fa-instagram"></i>
+     </a>
+
+     <a href="https://wa.me/6281315731299" target="_blank" class="whatsapp">
+       <i class="fa-brands fa-whatsapp"></i>
+     </a>
+    </div>
+        <p>&copy; 2025 Study Shelf. All rights reserved.</p>
+    </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

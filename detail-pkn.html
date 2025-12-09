@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="img/png" href="gambar/Logo Study Shelf.png">
+    <title>Detail E-Book - Study Shelf</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1 class="logo">
+                <img src="gambar/Logo SS Study Shelf.png" alt="Study Shelf Logo" class="logo-img"> 
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="index.html#koleksi">Koleksi</a></li>
+                    <li><a href="index.html#fitur">Fitur</a></li>
+                    <li><a href="index.html#tentang">Tentang Kami</a></li>
+                    <li><a href="index.html#kontak">Kontak</a></li>
+                    <li><a href="CheckOut.html" class="cart-link" aria-label="Keranjang Belanja"><i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="detail-ebook" class="detail-ebook">
+        <div class="container">
+            
+            <a href="index.html#koleksi" class="btn-kembali">&larr; Kembali ke Koleksi</a>
+            
+            <div class="detail-content">
+                <div class="ebook-image-container">
+                    <img src="Gambar/E-BOOK PKN.png" alt="E-book Pendidikan Kewarganegaraan">
+                </div>
+
+                <div class="ebook-info-container">
+                    <h2>Pendidikan Kewarganegaraan</h2>
+                    
+                    <p class="penulis">
+                        <strong>Penerbit:</strong>Prenada Media
+                    </p>
+                    
+                    <p class="harga-detail">Rp 75.000</p>
+                    
+                    <h3>Sinopsis</h3>
+                    <p class="sinopsis">
+Buku Pendidikan Kewarganegaraan ini dimaksudkan untuk memenuhi kebutuhan bahan ajaran matakuliah pendidikan kewarganegaraan. Referensi yang dipakai adalah materi-materi yang sesuai dengan bahan-bahan ajaran yang sudah ditentukan. Buku ini disusun dengan menjaga efektivitas dan efisiensi materi pendidikan kewarganegaraan. Penulis menggabungkan materi-materi tersebut dengan sebaik mungkin, seperti pembahasan mengenai Filsafat Pancasila, Indentitas Nasional. Bangsa dan Negara, Demokrasi Indonesia, HAM dan Rule of Law, Geostrategi Indonesia, Geopolitik Indonesia dan Good and Clean Governance<br>
+<br> Pendidikan Kewarganegaraan Bingkai NKRI<br>
+<br> Kajian Pancasila pada awal buku ini berpijak dari kedudukan Pancasila sebagai dasar dan Ideologi Negara Republik Indonesia. Akan tetapi, mengkaji Pancasila secara mendalam perlu diawali dengan pendekatan filsafat. Dengan demikian uraian pada buku ini meliputi esensi pancasila sebagai Ideologi Nasional, Pengamalan Pancasila dalam Kehidupan Bernegara. Buku ini juga membahas tentang jati diri kebangsaan, hak dan kewajiban warga negara, negara dan konstitusi, edukasi demokrasi Indonesia, rule of law (negara hukum) and human rights (HAM), wawasan nusantara sebagai geopolitik Indonesia, dan ketahanan nasional sebagai geostrategi. Indonesia yang kemudian menjadi satu kesatuan dalam Bingkai Negara Kesatuan Republik Indonesia.
+                    </p>
+                    
+                    <div id="ebook-data" 
+                         data-id="pkn" 
+                         data-name="Pendidikan Kewarganegaraan" 
+                         data-price="75000">
+                    </div> 
+
+                    <button onclick="addToCartAndRedirect()" class="btn">Beli Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer id="kontak">
+    <div class="container">
+        <h2>Ikuti Kami</h2>
+        <div class="social">
+     <a href="https://www.facebook.com/USERNAME_FACEBOOK_ANDA" target="_blank" class="facebook">
+       <i class="fa-brands fa-facebook"></i>
+     </a>
+
+     <a href="https://www.instagram.com/ss_studyshelf" target="_blank" class="instagram">
+       <i class="fa-brands fa-instagram"></i>
+     </a>
+
+     <a href="https://wa.me/6281315731299" target="_blank" class="whatsapp">
+       <i class="fa-brands fa-whatsapp"></i>
+     </a>
+    </div>
+        <p>&copy; 2025 Study Shelf. All rights reserved.</p>
+    </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

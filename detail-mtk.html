@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="img/png" href="gambar/Logo Study Shelf.png">
+    <title>Detail E-Book - Study Shelf</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1 class="logo">
+                <img src="gambar/Logo SS Study Shelf.png" alt="Study Shelf Logo" class="logo-img"> 
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="index.html#koleksi">Koleksi</a></li>
+                    <li><a href="index.html#fitur">Fitur</a></li>
+                    <li><a href="index.html#tentang">Tentang Kami</a></li>
+                    <li><a href="index.html#kontak">Kontak</a></li>
+                    <li><a href="CheckOut.html" class="cart-link" aria-label="Keranjang Belanja"><i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="detail-ebook" class="detail-ebook">
+        <div class="container">
+            
+            <a href="index.html#koleksi" class="btn-kembali">&larr; Kembali ke Koleksi</a>
+            
+            <div class="detail-content">
+                <div class="ebook-image-container">
+                    <img src="Gambar/E-BOOK MTK.png" alt="E-book Intisari Matematika">
+                </div>
+
+                <div class="ebook-info-container">
+                    <h2>Intisari Matematika</h2>
+                    
+                    <p class="penulis">
+                        <strong>Penerbit:</strong> Bhuana Ilmu Populer
+                    </p>
+                    
+                    <p class="harga-detail">Rp 160.000</p>
+                    
+                    <h3>Sinopsis</h3>
+                    <p class="sinopsis">
+Buku ini hadir sebagai media penunjang proses pembelajaran siswa di sekolah maupun di rumah. Berisi konsep-konsep dasar matematika untuk kelas 7, 8 dan 9 SMP/MTs. Buku ini disusun secara sistematis dan terdiri dari 17 bab yang merupakan inti pelajaran dasar matematika SMP/MTs. Penjelasan materi di setiap bab buku ini disajikan dengan ringkas, praktis, padat, jelas mudah dipahami serta sesuai dengan kurikulum yang berlaku. Buku ini disertai beragam contoh soal yang sengaja dipilih dari soal-soal ulangan harian, ujian tengah semester, ujian akhir semester, ujian sekolah dan ujian nasional. Dalam buku ini terdapat pula contoh soal yang disertai cara cepat untuk menyelesaikannya. Tak hanya itu, di akhir bab juga diberikan beberapa latihan soal yang berguna untuk mengasah pemahaman dan menumbuhkan semangat berlatih para siswa. Penulis berharap semoga buku ini bisa menjadi media pendukung belajar para siswa dalam memahami konsep-konsep dasar matematika, Kritik dan saran yang membangun sangat penulis harapkan untuk penyempurnaan ke depannya.                    </p>
+                    
+                    <div id="ebook-data" 
+                         data-id="mtk" 
+                         data-name="Intisari Matematika" 
+                         data-price="160000">
+                    </div> 
+
+                    <button onclick="addToCartAndRedirect()" class="btn">Beli Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer id="kontak">
+    <div class="container">
+        <h2>Ikuti Kami</h2>
+        <div class="social">
+     <a href="https://www.facebook.com/USERNAME_FACEBOOK_ANDA" target="_blank" class="facebook">
+       <i class="fa-brands fa-facebook"></i>
+     </a>
+
+     <a href="https://www.instagram.com/ss_studyshelf" target="_blank" class="instagram">
+       <i class="fa-brands fa-instagram"></i>
+     </a>
+
+     <a href="https://wa.me/6281315731299" target="_blank" class="whatsapp">
+       <i class="fa-brands fa-whatsapp"></i>
+     </a>
+    </div>
+        <p>&copy; 2025 Study Shelf. All rights reserved.</p>
+    </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

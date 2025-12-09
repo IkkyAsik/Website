@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="img/png" href="gambar/Logo Study Shelf.png">
+    <title>Detail E-Book - Study Shelf</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1 class="logo">
+                <img src="gambar/Logo SS Study Shelf.png" alt="Study Shelf Logo" class="logo-img"> 
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="index.html#koleksi">Koleksi</a></li>
+                    <li><a href="index.html#fitur">Fitur</a></li>
+                    <li><a href="index.html#tentang">Tentang Kami</a></li>
+                    <li><a href="index.html#kontak">Kontak</a></li>
+                    <li><a href="CheckOut.html" class="cart-link" aria-label="Keranjang Belanja"><i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="detail-ebook" class="detail-ebook">
+        <div class="container">
+            
+            <a href="index.html#koleksi" class="btn-kembali">&larr; Kembali ke Koleksi</a>
+            
+            <div class="detail-content">
+                <div class="ebook-image-container">
+                    <img src="Gambar/E-BOOK SBK.png" alt="E-book Semua Bisa Kaya">
+                </div>
+
+                <div class="ebook-info-container">
+                    <h2>Semua Bisa Kaya</h2>
+                    
+                    <p class="penulis">
+                        <strong>Penerbit:</strong> Elex Media Komputindo
+                    </p>
+                    
+                    <p class="harga-detail">Rp 70.000</p>
+                    
+                    <h3>Sinopsis</h3>
+                    <p class="sinopsis">
+Era yang semakin sulit dengan kebutuhan dan biaya hidup yang selalu bertambah menuntun kita untuk semakin selektif dalam menggunakan uang. Jika ingin kaya, dalam arti dapat memenuhi semua kebutuhan pokok, tidak selamanya kita harus mencari tambahan pendapatan sebagai solusi untuk menutupi semua kekurangan.
+Kita harus bisa menjadi penjaga gawang dalam penggunaan keuangan pribadi dan keluarga. Kita juga harus selektif dan ahli mengalokasikan pendapatan agar semua tujuan keuangan tercapai. Buku ini membahas panduan mengatur keuangan sesuai dengan Al-Quran dan hadis, seperti bagaimana cara melihat kesehatan kondisi keuangan, menetapkan dan mencapai tujuan keuangan, jurus-jurus berhemat, jenis-jenis instrumen investasi hingga perencanaan waris dan wakaf.
+Tuntunan penggunaan uang pun tidak sebatas perencanaan keuangan syariah, tetapi bagaimana cara kita memiliki pola hidup yang lebih baik. Pola hidup yang tidak hanya memberikan pahala di dunia, tetapi juga pahala yang berkesinambungan ketika kita sudah tiada.
+                    </p>
+                    
+                    <div id="ebook-data" 
+                         data-id="sbk" 
+                         data-name="Semua Bisa Kaya" 
+                         data-price="70000">
+                    </div> 
+
+                    <button onclick="addToCartAndRedirect()" class="btn">Beli Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer id="kontak">
+    <div class="container">
+        <h2>Ikuti Kami</h2>
+        <div class="social">
+     <a href="https://www.facebook.com/USERNAME_FACEBOOK_ANDA" target="_blank" class="facebook">
+       <i class="fa-brands fa-facebook"></i>
+     </a>
+
+     <a href="https://www.instagram.com/ss_studyshelf" target="_blank" class="instagram">
+       <i class="fa-brands fa-instagram"></i>
+     </a>
+
+     <a href="https://wa.me/6281315731299" target="_blank" class="whatsapp">
+       <i class="fa-brands fa-whatsapp"></i>
+     </a>
+    </div>
+        <p>&copy; 2025 Study Shelf. All rights reserved.</p>
+    </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

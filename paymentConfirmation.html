@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="img/png" href="gambar/Logo Study Shelf.png">
+    <title>Konfirmasi Pembayaran | Study Shelf</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css"> 
+    <style>
+        /* Gaya spesifik untuk halaman konfirmasi pembayaran */
+        .payment-confirmation {
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .confirmation-box {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 40px;
+            text-align: left;
+        }
+
+        .confirmation-box h2 {
+            color: #4CAF50; /* Warna hijau untuk sukses */
+            margin-bottom: 20px;
+            font-size: 2em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .confirmation-box h2 i {
+            margin-right: 15px;
+        }
+
+        .receipt-details, .payment-instruction {
+            margin-top: 30px;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+
+        .receipt-details p {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .receipt-details .label {
+            font-weight: 500;
+            color: #555;
+        }
+
+        .receipt-details .value {
+            font-weight: 700;
+            color: #333;
+        }
+        
+        .final-amount {
+            font-size: 1.5em !important;
+            padding: 10px 0;
+            border-top: 2px dashed #ccc;
+            margin-top: 15px !important;
+        }
+
+        .barcode-area {
+            text-align: center;
+            margin: 30px 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .barcode-area img {
+            width: 200px; /* Sesuaikan ukuran barcode */
+            height: auto;
+            border: 1px solid #ddd;
+            padding: 10px;
+            background: white;
+        }
+
+        .payment-instruction h4 {
+            color: #333;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #007bff;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .payment-instruction ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .payment-instruction ul li {
+            background-color: #ffebee; /* Warna latar belakang untuk perhatian */
+            padding: 10px;
+            margin-bottom: 8px;
+            border-radius: 4px;
+            color: #d32f2f; /* Warna teks merah */
+            font-weight: 600;
+        }
+
+        .payment-instruction .info-detail {
+            background-color: #e3f2fd; /* Warna biru muda untuk info */
+            color: #1565c0; /* Warna teks biru tua */
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 15px;
+        }
+
+        .confirmation-actions {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .btn-download {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        .btn-home {
+            background-color: #6c757d;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">
+                <img src="gambar/Logo SS Study Shelf.png" alt="Study Shelf Logo" class="logo-img"> 
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="index.html#koleksi">Koleksi</a></li>
+                    <li><a href="index.html#fitur">Fitur</a></li>
+                    <li><a href="index.html#tentang">Tentang Kami</a></li>
+                    <li><a href="index.html#kontak">Kontak</a></li>
+                    <li><a href="CheckOut.html" class="cart-link" aria-label="Keranjang Belanja"><i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="payment-confirmation" class="payment-confirmation">
+        <div class="container">
+            <div class="confirmation-box">
+                <h2><i class="fas fa-check-circle"></i> Pesanan Berhasil Dibuat!</h2>
+                <p>Terima kasih atas pembelian Anda. Harap selesaikan pembayaran sesuai instruksi di bawah ini.</p>
+
+                <div class="receipt-details">
+                    <p><span class="label">ID Transaksi:</span> <span class="value" id="transaction-id">#SS20251208XyZ1</span></p>
+                    <p><span class="label">Metode Pembayaran:</span> <span class="value" id="payment-method">Memuat...</span></p> 
+                    <p><span class="label">Email Penerima:</span> <span class="value" id="recipient-email">Memuat...</span></p> 
+                    <p class="final-amount"><span class="label">TOTAL HARUS DIBAYAR:</span> <span class="value" id="total-paid">Rp 125.000</span></p>
+                </div>
+
+                <div class="barcode-area">
+                    <h4>QRIS/Barcode Pembayaran</h4>
+                    <img src="gambar/placeholder_qrcode.png" alt="QR Code Pembayaran" id="payment-qrcode"> 
+                    <small>Scan QR code di atas menggunakan aplikasi E-Wallet/Mobile Banking Anda.</small>
+                </div>
+
+                <div class="payment-instruction">
+                    <h4>Instruksi Penting</h4>
+                    <ul>
+                        <li id="payment-deadline"><i class="fas fa-clock"></i> Batas Waktu Pembayaran: </li>
+                        <li><i class="fas fa-exclamation-triangle"></i> Pastikan jumlah transfer sesuai Total Pembayaran.</li>
+                    </ul>
+
+                    <div class="info-detail">
+                        <p><strong>Transfer Bank BCA:</strong></p>
+                        <p>Nomor Rekening: <span class="value">**1234567890**</span></p>
+                        <p>Atas Nama: <span class="value">**PT. Study Shelf Digital**</span></p>
+                    </div>
+                </div>
+
+                <div class="confirmation-actions">
+                    <a href="#" class="btn btn-download" id="download-receipt-btn"><i class="fas fa-download"></i> Unduh Struk</a>
+                    <a href="index.html" class="btn btn-download btn-home"><i class="fas fa-home"></i> Kembali ke Beranda</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+    <footer id="kontak">
+        <div class="container">
+            <h2>Ikuti Kami</h2>
+            <div class="social">
+                <a href="https://www.facebook.com/USERNAME_FACEBOOK_ANDA" target="_blank" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/ss_studyshelf" target="_blank" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://wa.me/6281315731299" target="_blank" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+            <p>&copy; 2025 Study Shelf. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Mengambil parameter dari URL
+            const urlParams = new URLSearchParams(window.location.search);
+            
+            // 1. Ambil dan Set Email
+            const userEmail = urlParams.get('email');
+            const emailElement = document.getElementById('recipient-email');
+            
+            if (emailElement && userEmail) {
+                emailElement.textContent = userEmail;
+            } else if (emailElement) {
+                emailElement.textContent = 'Email tidak tersedia'; 
+            }
+
+            // 2. Ambil dan Set Metode Pembayaran
+            const paymentMethod = urlParams.get('metode-bayar');
+            const paymentMethodElement = document.getElementById('payment-method');
+            
+            if (paymentMethodElement && paymentMethod) {
+                let displayMethod = '';
+                // Konversi value dari select option ke teks yang lebih ramah pengguna
+                if (paymentMethod === 'transfer') {
+                    displayMethod = 'Transfer Bank (BCA/Mandiri)';
+                } else if (paymentMethod === 'ewallet') {
+                    displayMethod = 'E-Wallet (GoPay/OVO/Dana)';
+                } else if (paymentMethod === 'kartu') {
+                    displayMethod = 'Kartu Kredit/Debit';
+                }
+                paymentMethodElement.textContent = displayMethod || paymentMethod;
+            }
+        });
+    </script>
+    <script src="script.js"></script> 
+</body>
+</html>

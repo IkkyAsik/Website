@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="img/png" href="gambar/Logo Study Shelf.png">
+    <title>Keranjang Belanja | Study Shelf</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">
+                <img src="gambar/Logo SS Study Shelf.png" alt="Study Shelf Logo" class="logo-img"> 
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="index.html#koleksi">Koleksi</a></li>
+                    <li><a href="index.html#fitur">Fitur</a></li>
+                    <li><a href="index.html#tentang">Tentang Kami</a></li>
+                    <li><a href="index.html#kontak">Kontak</a></li>
+                    <li><a href="CheckOut.html" class="cart-link" aria-label="Keranjang Belanja"><i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="checkout" class="checkout">
+        <div class="container">
+            <h2>🛒 Keranjang Pesanan Anda</h2>
+
+            <div class="checkout-grid">
+                
+                <div class="keranjang-pesanan">
+                    <h3>List E-Book yang diBeli</h3>
+                    
+                    <div class="item-list" id="cart-items">
+                        <p class="empty-cart-message">Memuat keranjang...</p>
+                    </div> 
+
+                    <div class="total-summary">
+                        <div class="total">
+                            <p>Subtotal:</p>
+                            <p id="subtotal">Rp 0</p>
+                        </div>
+                        <div class="total final-total">
+                            <p>Total Pembayaran:</p>
+                            <p id="final-total-amount">Rp 0</p>
+                        </div>
+                    </div>
+
+                    <a href="index.html#koleksi" class="btn btn-secondary">Tambah E-book Lain</a>
+
+                </div> 
+                
+                <div class="form-pembayaran">
+                    <h3>Informasi Pembayaran</h3>
+                    <form action="PaymentConfirmation.html" method="GET"> 
+                        
+                        <div class="form-group">
+                            <label for="nama">Nama Lengkap</label>
+                            <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap Anda" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="contoh@mail.com" required> 
+                            <small>Link unduh akan dikirimkan ke alamat email ini.</small>
+                        </div>
+
+                        <h3>Pilih Metode Pembayaran</h3>
+                        <div class="form-group">
+                            <select id="metode-bayar" name="metode-bayar" required>
+                                <option value="" disabled selected>Pilih salah satu...</option>
+                                <option value="transfer">Transfer Bank (BCA/Mandiri)</option>
+                                <option value="ewallet">E-Wallet (GoPay/OVO/Dana)</option>
+                                <option value="kartu">Kartu Kredit/Debit</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn btn-checkout" id="checkout-button">
+                            Selesaikan Pembayaran Rp 0
+                        </button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer id="kontak">
+        <div class="container">
+            <h2>Ikuti Kami</h2>
+            <div class="social">
+                <a href="https://www.facebook.com/USERNAME_FACEBOOK_ANDA" target="_blank" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/ss_studyshelf" target="_blank" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://wa.me/6281315731299" target="_blank" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+            <p>&copy; 2025 Study Shelf. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
